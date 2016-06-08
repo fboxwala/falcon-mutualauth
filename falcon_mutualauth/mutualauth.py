@@ -21,7 +21,7 @@ from twisted.web.server import Request
 logger = structlog.get_logger()
 
 
-class MutualAuthRequest(object, Request):
+class MutualAuthRequest(Request, object):
 
     """HTTP request received over mutually-authenticated TLS.
 
